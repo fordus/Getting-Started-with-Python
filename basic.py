@@ -314,3 +314,104 @@ except ZeroDivisionError:
 finally:
     print('Finally')
 
+
+# Working with lists
+print(f'''{bcolors.OKBLUE}
+----------Lists----------''')
+
+# Add a element at the end of the list
+my_list = [1, 2, 3, 4, 5]
+my_list.append(6)
+print(f'Append: {my_list}') # [1, 2, 3, 4, 5, 6]
+
+# Insert a element at a specific index
+my_list = [1, 2, 3, 4, 5]
+my_list.insert(2, 7)
+print(f'Insert: {my_list}') # [1, 2, 7, 3, 4, 5]
+
+# Add a list of elements at the end of the list
+my_list = [1, 2, 3, 4, 5]
+my_list.extend([8, 9])
+print(f'Extend: {my_list}') # [1, 2, 3, 4, 5, 8, 9]
+
+# Combine two lists
+my_list = [1, 2, 3, 4, 5]
+my_list2 = [6, 7, 8]
+
+my_list3 = my_list + my_list2
+print(f'Combine: {my_list3}') # [1, 2, 3, 4, 5, 6, 7, 8]
+
+# Find a element in a list
+my_list = [1, 2, 3, 4, 5]
+print(f'Find: {3 in my_list}') # True
+
+# Obtain the index of an element
+my_list = [1, 2, 3, 4, 5]
+print(f'Index: {my_list.index(3)}') # 2
+
+# Length of a list
+my_list = [1, 2, 3, 4, 5]
+print(f'Length: {len(my_list)}') # 5
+
+# Count the number of times an element appears in a list
+my_list = [1, 2, 3, 4, 5]
+print(f'Count: {my_list.count(3)}') # 1
+
+# Remove the last element of a list
+my_list = [1, 2, 3, 4, 5]
+my_list.pop()
+print(f'Pop: {my_list}') # [1, 2, 3, 4]
+
+# Remove an element at a specific index
+my_list = [1, 2, 3, 4, 5]
+my_list.pop(3)
+print(f'Pop: {my_list}') # [1, 2, 3, 5]
+
+# Remove an element from a list by value
+my_list = [1, 2, 3, 4, 5]
+my_list.remove(5)
+print(f'Remove: {my_list}') # [1, 2, 3, 4]
+
+# Reverse a list
+my_list = [1, 2, 3, 4, 5]
+my_list.reverse()
+print(f'Reverse: {my_list}') # [5, 4, 3, 2, 1]
+
+# Multiply a list 
+my_list = [1, 2, 3, 4, 5]*2
+print(f'Multiply: {my_list}') # [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+# Sort a list
+my_list = [1, 2, 3, 4, 5]
+my_list.sort()
+print(f'Sort: {my_list}') # [1, 2, 3, 4, 5]
+
+# Sort a list in reverse
+my_list = [1, 2, 3, 4, 5]
+my_list.sort(reverse=True)
+print(f'Sort: {my_list}') # [5, 4, 3, 2, 1]
+
+# Id of a list
+my_list = [1, 2, 3, 4, 5]
+print(f'Id: {id(my_list)}') # 1407917366400
+
+# Copy a list
+my_list = [1, 2, 3, 4, 5]
+my_list2 = my_list.copy()
+print(f'Copy: {my_list2}') # [1, 2, 3, 4, 5]
+
+
+# Clear a list
+my_list = [1, 2, 3, 4, 5]
+my_list.clear()
+print(f'Clear: {my_list}') # []
+
+# See all methods of a list
+print("Methods: ")
+for method in dir(my_list):
+    if method.startswith('__'):
+        continue
+    print(f'{method}')
+
+
+
