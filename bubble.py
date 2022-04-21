@@ -1,7 +1,3 @@
-
-from array import array
-
-
 # Bubble Sort
 def bubble_sort(arr):
     length = len(arr) - 1 
